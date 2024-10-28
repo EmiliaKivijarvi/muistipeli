@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/game.css">
+    <title>Muistipeli</title>
+</head>
+<body>
+    <div class="game">
+        <h2>KASVIT</h2>
+        <div class="controls">
+            <button id="next" class="next" onclick="window.location.reload()">Uusi peli</button>
+            <button id="stop" class="stop">Tauko</button>
+            <button id="start" class="start">Jatka</button>
+            <div class="stats">
+                <div class="moves">Siirrot: 0 siirtoa </div>
+                <div class="timer">Aika: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board-overlay">Peli on tauolla. Mikäli haluat jatkaa peliä niin paina "jatka" nappia.</div>
+            <div class="board" data-dimension="4">
+            </div>
+            <div class="win"></div>
+        </div>
+        <button id="back" class="back" onclick="window.location.href='index.html'">Takaisin</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+    <script src="./js/game.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #11582e9d;
+    overflow-y: auto;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: #021f0fbd;
+    padding: 40px 60px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.menu-button {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+ .togame {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #11582e;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.togame:focus {
+    border:#0205039d 2px solid;
+    font-weight: bold;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+table {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
